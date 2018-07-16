@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=leiji'>
+      <image class='icon' src='../../icon/icon1.png'></image>
+    </navigator>
+    <text class='txt'>当前用户</text>
+  </view>
+
+
+
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=linianleiji'>
+      <image class='icon' src='../../icon/icon3.png'></image>
+    </navigator>
+    <text class='txt'>历年累积</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=leijizhuce'>
+      <image class='icon' src='../../icon/icon4.png'></image>
+    </navigator>
+    <text class='txt'>网校注册用户</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../coursecount/coursecount'>
+      <image class='icon' src='../../icon/icon5.png'></image>
+    </navigator>
+    <text class='txt'>课程类型</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=coursetype'>
+      <image class='icon' src='../../icon/icon6.png'></image>
+    </navigator>
+    <text class='txt'>学员学习时间段</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=studenttime'>
+      <image class='icon' src='../../icon/icon7.png'></image>
+    </navigator>
+    <text class='txt'>智能答疑</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=Glive'>
+      <image class='icon' src='../../icon/icon8.png'></image>
+    </navigator>
+    <text class='txt'>Glive私博课</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=EPzhineng'>
+      <image class='icon' src='../../icon/icon9.png'></image>
+    </navigator>
+    <text class='txt'>EP智能网课</text>
+  </view>
+  <view class="item fl">
+    <navigator class="img" url='../detail/detail?type=device'>
+      <image class='icon' src='../../icon/icon10.png'></image>
+    </navigator>
+    <text class='txt'>学习设备占比</text>
+  </view>
+
+
+
+</view>

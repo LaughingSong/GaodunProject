@@ -1,0 +1,44 @@
+/**app.wxss**/
+body{
+	background-color: #f5f8fd;
+  margin: 0;
+	padding: 0;
+	font-size:14px;
+	font-family:"Microsoft Yahei";
+	box-sizing: border-box;
+}
+ul,li{
+	list-style-type: none;
+}
+
+input[type=button]{
+	cursor: pointer;
+}
+
+
+/***居中样式***/
+.center{
+	margin: 0 auto;
+}
+
+/***浮动样式***/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.none{
+	display: none;
+}
+
+

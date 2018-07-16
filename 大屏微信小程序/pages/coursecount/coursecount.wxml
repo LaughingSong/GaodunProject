@@ -1,0 +1,21 @@
+<!--pages/coursecount/coursecount.wxml-->
+<view class="coursecount">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" class='cc_chart'></ec-canvas>
+
+    <!-- <view>
+      <view>
+        <text></text>
+        <text></text>
+      </view>
+      <view>
+        <text></text>
+        <text></text>
+      </view>
+      <view>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+     -->
+
+</view>

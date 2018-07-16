@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "高顿大屏",
+  "usingComponents": {
+    "ec-canvas": "../../third/ec-canvas/ec-canvas"
+  }
+}

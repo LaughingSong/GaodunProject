@@ -1,0 +1,50 @@
+<!--pages/detail/detail.wxml-->
+<view wx:if="{{true}}" class='leiji'>
+  <view class='leiji_1'>
+    <view class='leiji_1_1'>
+      <text>累积服务学员</text>
+      <text>{{leiji.sevStudent}}人</text>
+      <view></view>
+    </view>
+    <view class='leiji_1_1'>
+      <text>当前活跃人数</text>
+      <text>{{leiji.actNum}}人</text>
+      <view></view>
+    </view>
+  </view>
+  <view class='leiji_2'>
+    <view class='leiji_2_1'>
+      <text>直播累积参与人数</text>
+      <text>{{leiji.joinNum}}人</text>
+      <view></view>
+    </view>
+    <view class='leiji_2_1'>
+      <text>网课累积播放次数</text>
+      <text>{{leiji.playtime}}次</text>
+      <view></view>
+    </view>
+    <view class='leiji_2_1'>
+      <text>累积答疑</text>
+      <text>{{leiji.questions}}次</text>
+      <view></view>
+    </view>
+    <view class='leiji_2_1'>
+      <text>累积做题数</text>
+      <text>{{leiji.exercises}}道</text>
+      <view></view>
+    </view>
+  </view>
+  <view class="leiji_3">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" class='leiji-ec'></ec-canvas>
+  </view>
+
+
+
+
+</view>
+
+
+<view wx:if="{{type == 'liveuser'}}">
+  
+
+</view>

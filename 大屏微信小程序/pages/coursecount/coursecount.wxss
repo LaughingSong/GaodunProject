@@ -1,0 +1,17 @@
+/* pages/coursecount/coursecount.wxss */
+.coursecount{
+  width: 750rpx;
+  height: 1000rpx;
+  background: #abcdef;
+
+
+}
+
+.coursecount .cc_chart{
+  width: 750rpx;
+  height: 750rpx;
+  background: #cccccc;
+
+
+
+}

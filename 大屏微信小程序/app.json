@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/coursecount/coursecount",
+    "pages/index/index",
+    "pages/detail/detail"
+        
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ECECEC",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#ECECEC"
+  }
+}
