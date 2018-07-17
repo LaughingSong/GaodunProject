@@ -1,17 +1,44 @@
 /* pages/coursecount/coursecount.wxss */
 .coursecount{
   width: 750rpx;
-  height: 1000rpx;
-  background: #abcdef;
-
-
+  height: 800rpx;
 }
 
 .coursecount .cc_chart{
   width: 750rpx;
-  height: 750rpx;
-  background: #cccccc;
+  height: 800rpx;
+}
 
-
+.coursecount .cc_group{
+  width: 750rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
+.coursecount .cc_item{
+  width: 230rpx;
+  height: 200rpx;
+  background: #123456;
+  
+}
+
+.coursecount .cc_item text:first-of-type{
+  font-family: '微软雅黑';
+  font-size: 40rpx;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+
+.coursecount .cc_item text:last-of-type{
+  font-family: '微软雅黑';
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+

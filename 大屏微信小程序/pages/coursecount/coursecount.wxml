@@ -1,21 +1,18 @@
 <!--pages/coursecount/coursecount.wxml-->
 <view class="coursecount">
     <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" class='cc_chart'></ec-canvas>
-
-    <!-- <view>
-      <view>
-        <text></text>
-        <text></text>
+    <view class='cc_group'>
+      <view class='cc_item'>
+        <text>{{ mission.value1 }}</text>
+        <text>{{ mission.value3 }}人</text>
       </view>
-      <view>
-        <text></text>
-        <text></text>
+      <view class='cc_item'>
+        <text>{{ EP.value1 }}</text>
+        <text>{{ EP.value3 }}人</text>
       </view>
-      <view>
-        <text></text>
-        <text></text>
+      <view class='cc_item'>
+        <text>{{ Glive.value1 }}</text>
+        <text>{{ Glive.value3 }}人</text>
       </view>
     </view>
-     -->
-
 </view>

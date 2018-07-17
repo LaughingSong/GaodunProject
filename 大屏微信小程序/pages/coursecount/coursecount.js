@@ -8,7 +8,6 @@ var chart = null;
 
 
 
-
 Page({
 
   /**
@@ -32,12 +31,6 @@ Page({
     var that = this;
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
 
   /**
    * 生命周期函数--监听页面显示
@@ -49,40 +42,6 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  },
 
   loadData: function(obj){
     var that = this;
@@ -111,6 +70,7 @@ Page({
 
         for (var i in arr) {
           arr[i].value4 = util.toPercent(arr[i].value2/allNum);
+          arr[i].value5 = parseInt(util.toPercent(arr[i].value2 / allNum));
         }
         
         obj.setData({
@@ -123,31 +83,29 @@ Page({
         chart.setOption({
           series: {
             data: [{
-              value: 20,
-              name: '任务制'
+              value: that.data.mission.value5,
+              name: that.data.mission.value1
             }, {
-              value: 10,
-              name: 'EP智能'
+              value: that.data.EP.value5,
+              name: that.data.EP.value1
             }, {
-              value: 66,
-              name: 'Glive'
+              value: that.data.Glive.value5,
+              name: that.data.Glive.value1
             }, {
-              value: 4,
-              name: '其他'
+              value: that.data.other.value5,
+              name: that.data.other.value1
             }]
+          },
+          legend: {
+            data: [that.data.mission.value1, that.data.EP.value1, that.data.Glive.value1, that.data.other.value1]
           }
         });
-
-
-
 
 
       }
     });
 
   }
-
-
 })
 
 
@@ -161,53 +119,71 @@ function initChart(canvas, width, height) {
 
   var option = {
     backgroundColor: '#ffffff',
-    color: ["#abcdef","#cccccc","#000000","#445522"],
+    color: ["#0096AA", "#83CCD2", "#FCE5E8","#D7E7A3"],
     series: [{
       label: {
         normal: {
-          fontSize: 14
-        }
+          fontSize: 14,
+          position: 'outside',
+        } 
       },
+      name: '课程类型分布',
       type: 'pie',
       center: ['50%','50%'],
-      radius: [0, '70%'],
+      radius: [0,90],
       smooth: true,
+      clockWise: true,
       data: [{
-        value: 10,
-        name: '任务制网课'
+        value: 0,
+        name: ''
       }, {
-        value: 30,
-        name: 'EP智能网课'
+        value: 0,
+        name: ''
       }, {
-        value: 25,
-        name: 'Glive私播课'
+        value: 0,
+        name: ''
       }, {
-        value: 35,
-        name: '其他'
+        value: 0,
+        name: ''
       }],
       itemStyle: {
         emphasis: {
           shadowBlur: 10,
           shadowOffsetX: 0,
-          shadowColor: 'rgba(0,2,2,0.3)'
+          shadowColor: 'rgba(0,2,2,0.3)',
+          label: {
+            show: true,
+            formatter: "{d}%",
+            textStyle: {
+              // color: '#000',
+              fontSize: '17',
+              fontFamily: '微软雅黑',
+              fontWeight: 'bold'
+            }
+          }
+        },
+        normal: {
+          label: {
+            show: true
+          },
+          labelLine: {
+            show: true,
+            length: 10,
+            length2: 10
+          }
         }
       }
-    }]
+    }],
+    legend: {
+      selectedMode: false,
+      orient: 'horizontal',
+      x: 'center',
+      data: ['','','','']
+    }
   };
 
   chart.setOption(option);
   return chart;
-}
-
-
-
-/***页面初始化时加载数据***/
-function loadData(obj){
-  
-
-
-
-
 }
 
 
